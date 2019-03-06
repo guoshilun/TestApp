@@ -11,10 +11,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //dev22222222
-        //111111111
-        ///3333333
-//   44444444     44444
-//        555555555555
+        //appb 打印时间
+        System.currentTimeMillis();
     }
 }
