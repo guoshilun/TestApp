@@ -3,6 +3,8 @@ package com.test.appb;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.test.app.R;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -12,5 +14,6 @@ public class MainActivity extends AppCompatActivity {
         //dev22222222
         //111111111
         ///3333333
+//   44444444     44444
     }
 }
