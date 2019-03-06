@@ -1,4 +1,4 @@
-package com.test.appbc;
+package com.test.app;
 
 import org.junit.Test;
 
