@@ -1,4 +1,4 @@
-package com.test.appd;
+package com.test.appe;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

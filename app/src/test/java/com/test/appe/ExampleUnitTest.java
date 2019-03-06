@@ -1,4 +1,4 @@
-package com.test.appd;
+package com.test.appe;
 
 import org.junit.Test;
 
