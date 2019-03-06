@@ -1,4 +1,4 @@
-package com.test.app;
+package com.test.appc;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
