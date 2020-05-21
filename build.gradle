@@ -3,11 +3,19 @@
 buildscript {
     
     repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+
         google()
+        maven { url 'http://developer.huawei.com/repo/' }
+        maven { url "https://maven.google.com" }//需要添加的仓库地址
+        maven { url "https://dl.google.com/dl/android/maven2/" }
+        maven { url 'https://jitpack.io' }
+        mavenCentral()
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:3.5.3'
         
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -17,7 +25,15 @@ buildscript {
 
 allprojects {
     repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+
         google()
+        maven { url 'http://developer.huawei.com/repo/' }
+        maven { url "https://maven.google.com" }//需要添加的仓库地址
+        maven { url "https://dl.google.com/dl/android/maven2/" }
+        maven { url 'https://jitpack.io' }
+        mavenCentral()
         jcenter()
     }
 }
