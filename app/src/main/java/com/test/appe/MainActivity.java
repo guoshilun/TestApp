@@ -9,7 +9,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //marst最新
-//        修改包名为e
+//2020 6 20
     }
 }
