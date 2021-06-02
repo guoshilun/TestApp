@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear_root"
+    android:layout_width="@dimen/dp_70"
+    android:layout_height="@dimen/dp_108"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_relate"
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="@dimen/dp_88"
+        android:gravity="center">
+
+
+        <com.test.appe.RippleBackground
+            android:id="@+id/spreadview"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_70"
+            android:layout_centerInParent="true"
+            app:rb_color="@color/colorE94B59"
+            app:rb_duration="4000"
+            app:rb_radius="@dimen/dp_9"
+            app:rb_rippleAmount="5"
+            app:rb_scale="4"
+            app:rb_strokeWidth="0dp"
+            app:rb_type="fillRipple" />
+
+
+        <ImageView
+            android:id="@+id/gift0"
+            android:layout_width="@dimen/dp_46"
+            android:layout_height="@dimen/dp_46"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:src="@mipmap/icon_add_voice" />
+
+        <ImageView
+            android:id="@+id/iv_micro_status"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_alignRight="@+id/gift0"
+            android:layout_alignBottom="@+id/gift0"
+            android:src="@mipmap/icon_no_chat_txt" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_micro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/tv_micro_name_select" />
+</LinearLayout>

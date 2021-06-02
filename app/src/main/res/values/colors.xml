@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryDark">#9C27B0</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="white">#fff</color>
+    <color name="app_green_color">#63DE9B</color>
+    <color name="color_00A1E9">#00A1E9</color>
+    <color name="rippelColor">#0099CC</color>
+    <color name="rippelStokenColor">#f5b931</color>
+    <color name="colorE94B59">#E94B59</color>
+    <color name="color9881BE">#9881BE</color>
 </resources>

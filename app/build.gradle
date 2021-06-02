@@ -3,17 +3,48 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.test.app"
+        applicationId "com.testss.app"
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-    buildTypes {
+    signingConfigs {
+
+        debug {
+            storeFile file("../aeo_android.keystore")
+            storePassword "kx123456"
+            keyAlias "aeo_android.keystore"
+            keyPassword "kx123456"
+        }
+
         release {
-            minifyEnabled false
+            storeFile file("../aeo_android.keystore")
+            storePassword "kx123456"
+            keyAlias "aeo_android.keystore"
+            keyPassword "kx123456"
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false //代码混淆   true开启
+            //自动去除没有使用的资源,上一个条件必须开启
+            shrinkResources false
+            zipAlignEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+
+        release {
+            minifyEnabled false  //代码混淆   true开启
+            //自动去除没有使用的资源,上一个条件必须开启
+            shrinkResources false
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
     configurations.all {
@@ -35,4 +66,5 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.android.support:recyclerview-v7:24.2.1'
 }
