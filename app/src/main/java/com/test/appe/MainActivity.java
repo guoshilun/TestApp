@@ -18,12 +18,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        list.add("1");
-        list.add("2");
-        list.add("3");
-        array[0]="1111";
-        array[1]="2222";
-        array[2]="3333";
+
 
         findViewById(R.id.start).setOnClickListener(new View.OnClickListener() {
             @Override
