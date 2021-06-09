@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class ItemVoiceRoomView extends RelativeLayout {
     private ImageView ivGift0;
-    private ImageView iv1, iv2, iv3, iv4;
+//    private ImageView iv1, iv2, iv3, iv4;
     private TextView tvMicroName;
 
     public ItemVoiceRoomView(Context context) {
@@ -34,9 +34,9 @@ public class ItemVoiceRoomView extends RelativeLayout {
 
     private void init(Context context) {
         LayoutInflater.from(context).inflate(R.layout.item_view_voice_room_layout, this, true);
-        iv1 = (ImageView) findViewById(R.id.iv_wave);
-        iv2 = (ImageView) findViewById(R.id.iv_wave_1);
-        iv3 = (ImageView) findViewById(R.id.iv_wave_2);
+//        iv1 = (ImageView) findViewById(R.id.iv_wave);
+//        iv2 = (ImageView) findViewById(R.id.iv_wave_1);
+//        iv3 = (ImageView) findViewById(R.id.iv_wave_2);
         tvMicroName = findViewById(R.id.tv_micro);
         spreadView = findViewById(R.id.spreadview);
         ivGift0 = findViewById(R.id.gift0);
