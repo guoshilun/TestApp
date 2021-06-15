@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">TestApp</string>
+    <string name="app_name">米趣</string>
+    <string name="tab_home">米趣家</string>
+    <string name="tab_type">内容</string>
+    <string name="tab_mine">我的</string>
 </resources>

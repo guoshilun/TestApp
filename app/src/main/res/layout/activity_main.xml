@@ -1,20 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    tools:context="com.test.appe.MainActivity">
+    android:background="@color/white"
+    android:orientation="vertical">
 
-    <Button
-        android:id="@+id/start"
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="@dimen/text_25sp" />
+
+    <FrameLayout
+        android:id="@+id/home_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color9881BE" />
+
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/dp_150"
-        android:text="开启动画" />
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="5dp">
 
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/tab_bottom_style"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_home_bg"
+            android:text="@string/tab_home" />
 
-</RelativeLayout>
+        <RadioButton
+            android:id="@+id/rb_type"
+            style="@style/tab_bottom_style"
+            android:drawableTop="@drawable/tab_repayment_bg"
+            android:text="@string/tab_type" />
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            style="@style/tab_bottom_style"
+            android:drawableTop="@drawable/tab_mine_bg"
+            android:text="@string/tab_mine" />
+    </RadioGroup>
+</LinearLayout>
