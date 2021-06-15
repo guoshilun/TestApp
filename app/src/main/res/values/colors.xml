@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimary">#2288F7</color>
     <color name="colorPrimaryDark">#9C27B0</color>
     <color name="colorAccent">#FF4081</color>
     <color name="white">#fff</color>
@@ -10,4 +10,7 @@
     <color name="rippelStokenColor">#f5b931</color>
     <color name="colorE94B59">#E94B59</color>
     <color name="color9881BE">#9881BE</color>
+    <color name="emo_setting_tv_color">#999999</color>
+    <color name="tab_checked">#20C2B5</color>
+    <color name="black_50">#7f000000</color>
 </resources>

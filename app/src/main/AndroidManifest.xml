@@ -3,14 +3,18 @@
     package="com.test.appe">
 
     <application
-        android:allowBackup="true"
-        android:icon="@mipmap/icon_liehuo"
-        android:label="@string/app_name"
         android:name=".App"
-        android:roundIcon="@mipmap/icon_liehuo"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_add_voice"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_add_voice"
         android:supportsRtl="true"
         android:theme="@style/FullScreenNoTitleTheme">
-        <activity android:name="com.test.appe.MainActivity">
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.2" />
+        <activity android:name=".SplashActivity"/>
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
