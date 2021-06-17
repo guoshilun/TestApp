@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 public class ItemVoiceRoomView extends RelativeLayout {
     private ImageView ivGift0;
+
 //    private ImageView iv1, iv2, iv3, iv4;
     private TextView tvMicroName;
 
