@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         list.add(password1)
         list.add(password2)
         (list.indices).forEach {
+
             Log.e("tag", list[it])
         }
 
