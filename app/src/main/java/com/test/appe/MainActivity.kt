@@ -33,23 +33,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.view_voice_room_layout)
-        mATMessages.add("1111")
-        mATMessages.add("1234")
-        mATMessages.add("1222")
-        mATMessages.add("1333")
-        mATMessages.add("1444")
-        list.addAll(mATMessages.filter { it != "1444" }.take(1).toList())
-//        Log.e("tag", list.toString())
-        mATMessages.forEach {
-            if (it=="1234"){
-                Log.e("tag","1234")
-                return@forEach
-            }
-            Log.e("tag","end")
-        }
-//        switchFragment(R.id.rb_home)
-//        rg_tab.setOnCheckedChangeListener(RadioGroup.OnCheckedChangeListener { group, checkedId -> switchFragment(checkedId) })
+        setContentView(R.layout.activity_main)
+        switchFragment(R.id.rb_home)
+        rg_tab.setOnCheckedChangeListener(RadioGroup.OnCheckedChangeListener { group, checkedId -> switchFragment(checkedId) })
+
+
 
 
 //        list.add("qwerW854321")
@@ -73,62 +61,62 @@ class MainActivity : AppCompatActivity() {
 //            }isInitialized
 //        }
     }
-//
-//    private fun switchFragment(v: Int) {
-//        if (!::fm.isInitialized) {
-//            fm = supportFragmentManager
-//        }
-//        val ft: FragmentTransaction = fm.beginTransaction()
-//        hideFragments(ft)
-//        when (v) {
-//            R.id.rb_home -> if (hf == null) {
-//                hf = HomeFragment.newInstance()
-//                ft.add(R.id.home_fragment, hf)
-//                tv_title.text="米趣家"
-//            } else {
-//                tv_title.text="米趣家"
-//                ft.show(hf)
-//            }
-//            R.id.rb_type -> if (tf == null) {
-//                tf = TypeFragment()
-//                ft.add(R.id.home_fragment, tf)
-//                tv_title.text="内容"
-//            } else {
-//                tv_title.text="内容"
-//                ft.show(tf)
-//            }
-//            R.id.rb_mine -> if (mf == null) {
-//                mf = MineFragment.newInstance()
-//                ft.add(R.id.home_fragment, mf)
-//                tv_title.text="我的"
-//            } else {
-//                tv_title.text="我的"
-//                ft.show(mf)
-//            }
-//            else -> if (hf == null) {
-//                hf = HomeFragment.newInstance()
-//                ft.add(R.id.home_fragment, hf)
-//                tv_title.text="米趣家"
-//            } else {
-//                tv_title.text="米趣家"
-//                ft.show(hf)
-//            }
-//        }
-//        ft.commitAllowingStateLoss()
-//    }
-//
-//    private fun hideFragments(ft: FragmentTransaction?) {
-//        if (ft == null) {
-//            return
-//        }
-//        if (hf != null) {
-//            ft.hide(hf)
-//        }
-//        if (tf != null) {
-//            ft.hide(tf)
-//        }
-//        if (mf != null) {
-//            ft.hide(mf)
-//        }
-//    }
+
+    private fun switchFragment(v: Int) {
+        if (!::fm.isInitialized) {
+            fm = supportFragmentManager
+        }
+        val ft: FragmentTransaction = fm.beginTransaction()
+        hideFragments(ft)
+        when (v) {
+            R.id.rb_home -> if (hf == null) {
+                hf = HomeFragment.newInstance()
+                ft.add(R.id.home_fragment, hf)
+                tv_title.text="米趣家"
+            } else {
+                tv_title.text="米趣家"
+                ft.show(hf)
+            }
+            R.id.rb_type -> if (tf == null) {
+                tf = TypeFragment()
+                ft.add(R.id.home_fragment, tf)
+                tv_title.text="DIY"
+            } else {
+                tv_title.text="DIY"
+                ft.show(tf)
+            }
+            R.id.rb_mine -> if (mf == null) {
+                mf = MineFragment.newInstance()
+                ft.add(R.id.home_fragment, mf)
+                tv_title.text="我的"
+            } else {
+                tv_title.text="我的"
+                ft.show(mf)
+            }
+            else -> if (hf == null) {
+                hf = HomeFragment.newInstance()
+                ft.add(R.id.home_fragment, hf)
+                tv_title.text="米趣家"
+            } else {
+                tv_title.text="米趣家"
+                ft.show(hf)
+            }
+        }
+        ft.commitAllowingStateLoss()
+    }
+
+    private fun hideFragments(ft: FragmentTransaction?) {
+        if (ft == null) {
+            return
+        }
+        if (hf != null) {
+            ft.hide(hf)
+        }
+        if (tf != null) {
+            ft.hide(tf)
+        }
+        if (mf != null) {
+            ft.hide(mf)
+        }
+    }
 }

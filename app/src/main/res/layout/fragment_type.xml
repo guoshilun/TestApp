@@ -1,37 +1,64 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_shadow_gift_drawable"
-    android:orientation="vertical">
+    android:fillViewport="true">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dp_50"
-        android:gravity="center"
-        android:text="内容"
-        android:textColor="@color/white"
-        android:textSize="@dimen/text_20sp" />
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_shadow_gift_drawable"
+        android:orientation="vertical">
 
-    <android.support.v7.widget.AppCompatImageView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dp_120"
-        android:background="@mipmap/icon_content" />
 
-    <android.support.v7.widget.AppCompatImageView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dp_120"
-        android:background="@mipmap/icon_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:gravity="center"
+            android:text="内容"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_20sp" />
 
-    <android.support.v7.widget.AppCompatImageView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dp_120"
-        android:background="@mipmap/icon_content" />
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@mipmap/lv_1" />
 
-    <android.support.v7.widget.AppCompatImageView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dp_120"
-        android:background="@mipmap/icon_content" />
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/lv_2" />
 
-</LinearLayout>
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/lv_3" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/lv_4" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/lv_5" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/lv_6" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/lv_7" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/lv_8" />
+
+    </LinearLayout>
+</ScrollView>
