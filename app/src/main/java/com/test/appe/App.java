@@ -7,5 +7,9 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         DensityUtils.init(this);
+        //git test
+        //git test1
+        //git test2
+
     }
 }
