@@ -8,5 +8,6 @@ public class App extends Application {
         super.onCreate();
         DensityUtils.init(this);
         //git test
+        //git test1
     }
 }
