@@ -9,5 +9,7 @@ public class App extends Application {
         DensityUtils.init(this);
         //git test
         //git test1
+        //git test2
+
     }
 }
