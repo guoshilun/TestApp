@@ -34,30 +34,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         switchFragment(R.id.rb_home)
         rg_tab.setOnCheckedChangeListener(RadioGroup.OnCheckedChangeListener { group, checkedId -> switchFragment(checkedId) })
-
-
-
-
-//        list.add("qwerW854321")
-//        list.add("qwer854321")
-//        list.add("WWW854321")
-//        list.add("1234qwerW854321")
-//        list.add("1234qwerW8543211111111")
-//        list.add("aaaaQWEeR")
-//        list.add("1234")
-//        list.add("123456783")
-//        list.add("1234....")
-//        list.add("QQQQQQQQ")
-//        list.add("qqqqqqqq")
-//        list.add("!@#\$qqqq")
-//        list.add("!@#\$1234Wq")
-//        list.add("@#\$!@#\$")
-//        findViewById(R.id.start).setOnClickListener {
-//            list.indices.forEach {
-//                Log.e("", "")
-//                Log.e("tag-->", list[it] + "   ${list[it].matches(Regex(REGEX_PWD))}")
-//            }isInitialized
-//        }
     }
 
     private fun switchFragment(v: Int) {
@@ -70,33 +46,33 @@ class MainActivity : AppCompatActivity() {
             R.id.rb_home -> if (hf == null) {
                 hf = HomeFragment.newInstance()
                 ft.add(R.id.home_fragment, hf)
-                tv_title.text="米趣家"
+                tv_title.text = "米趣家"
             } else {
-                tv_title.text="米趣家"
+                tv_title.text = "米趣家"
                 ft.show(hf)
             }
             R.id.rb_type -> if (tf == null) {
                 tf = TypeFragment()
                 ft.add(R.id.home_fragment, tf)
-                tv_title.text="DIY"
+                tv_title.text = "DIY"
             } else {
-                tv_title.text="DIY"
+                tv_title.text = "DIY"
                 ft.show(tf)
             }
             R.id.rb_mine -> if (mf == null) {
                 mf = MineFragment.newInstance()
                 ft.add(R.id.home_fragment, mf)
-                tv_title.text="我的"
+                tv_title.text = "我的"
             } else {
-                tv_title.text="我的"
+                tv_title.text = "我的"
                 ft.show(mf)
             }
             else -> if (hf == null) {
                 hf = HomeFragment.newInstance()
                 ft.add(R.id.home_fragment, hf)
-                tv_title.text="米趣家"
+                tv_title.text = "米趣家"
             } else {
-                tv_title.text="米趣家"
+                tv_title.text = "米趣家"
                 ft.show(hf)
             }
         }
