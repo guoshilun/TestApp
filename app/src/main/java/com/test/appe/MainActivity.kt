@@ -14,8 +14,6 @@ import com.test.appe.fragment.TypeFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-    //    var REGEX_PWD = "^(?![0-9]+$)(?![a-z]+$)(?![A-Z]+$)([a-z]|[A-Z]|[0-9]){8,16}$"//大小写字母及数字三选二组合
-//    var REGEX_PWD = "^(?=.*\\d)(?=.*[a-z])[a-zA-Z0-9]{8,16}$"// 大小写字母都必须包含
     private lateinit var fm: FragmentManager
     private var hf: HomeFragment? = null
     private var tf: TypeFragment? = null
