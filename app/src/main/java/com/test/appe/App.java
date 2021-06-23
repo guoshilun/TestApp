@@ -7,6 +7,6 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         DensityUtils.init(this);
-        //
+        /////1111122222
     }
 }
