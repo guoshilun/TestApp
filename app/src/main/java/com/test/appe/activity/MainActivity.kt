@@ -46,8 +46,10 @@ class MainActivity : AppCompatActivity() {
             R.id.rb_home -> if (hf == null) {
                 hf = HomeFragment.newInstance()
                 ft.add(R.id.home_fragment, hf)
+
                 tv_title.text = "米趣"
             } else {
+
                 tv_title.text = "米趣"
                 ft.show(hf)
             }
