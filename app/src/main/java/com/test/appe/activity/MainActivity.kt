@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     private var mf: MineFragment? = null
     private var mATMessages = mutableListOf<String>()
     private var list = mutableListOf<String>()
+    private val REGEX_PWD_NEW = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{8,16}$"
 
     companion object {
         fun launchActivity(context: Context) {
