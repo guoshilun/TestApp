@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     private var mf: MineFragment? = null
     private var mATMessages = mutableListOf<String>()
     private var list = mutableListOf<String>()
+
     companion object {
         fun launchActivity(context: Context) {
             val intent = Intent(context, MainActivity::class.java)
