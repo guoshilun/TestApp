@@ -13,8 +13,9 @@
         <meta-data
             android:name="android.max_aspect"
             android:value="2.2" />
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".SplashActivity">
+        <activity android:name=".activity.EmojiActivity"/>
+        <activity android:name=".activity.MainActivity"/>
+        <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
