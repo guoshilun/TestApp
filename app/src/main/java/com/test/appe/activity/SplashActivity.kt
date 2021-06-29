@@ -1,8 +1,9 @@
-package com.test.appe
+package com.test.appe.activity
 
 import android.os.Bundle
 import android.os.Handler
 import android.support.v7.app.AppCompatActivity
+import com.test.appe.R
 
 class SplashActivity : AppCompatActivity() {
     private var mainHandler = Handler()
@@ -16,6 +17,6 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun enterApp() {
-        MainActivity.launchActivity(this)
+        EmojiActivity.launchActivity(this)
     }
 }
